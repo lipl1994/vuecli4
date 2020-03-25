@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <h1>{{title}}</h1>
     <img alt="Vue logo" src="../assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
@@ -10,7 +11,11 @@
 import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
-  name: 'Home',
+  data () {
+    return {
+      title: '学到新知识'
+    }
+  },
   components: {
     HelloWorld
   }
